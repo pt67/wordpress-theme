@@ -15,6 +15,13 @@ if ( have_posts() ) :
 <?php        
 
     endwhile; 
+?>
+
+<?php else: ?>
+<div class="container">
+<h3>No result found.</h3>
+</div>
+<?php
 endif; 
 ?>
 
