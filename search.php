@@ -6,11 +6,14 @@
 <?php 
 if ( have_posts() ) : 
     while ( have_posts() ) : the_post(); 
-        // Display post content
-       the_title( '<h1>', '</h1>' ); 
-     
-        //the_content();
-        
+
+?>
+<div class="p-5 container">
+
+<a href="<?php the_permalink(); ?>"> <?php the_title( '<p>', '</p>' ); ?> </a>
+</div>
+<?php        
+
     endwhile; 
 endif; 
 ?>
